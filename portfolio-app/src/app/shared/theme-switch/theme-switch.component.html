@@ -1,0 +1,16 @@
+<ul class="nav justify-content-end theme-switch-container">
+  <li class="nav-item">
+    <button type="button" class="btn btn-light btn-lg" title="Light Theme" [ngClass]="{'theme-switch-active-shadow': lightTheme}"
+      (click)="toggleTheme()">
+        <!-- <h4>&#x263C;</h4> -->
+        <!-- below is a fontawesome icon but is used using a script tag eventhough it is a dependency-->
+        <i class="fas fa-sun"></i>
+      </button>
+  </li>
+  <li class="nav-item">
+    <button type="button" class="btn btn-dark btn-lg" title="Dark Theme" [ngClass]="{'theme-switch-dark-active-shadow': !lightTheme}"
+      (click)="toggleTheme()">
+        <h4>&#x263D;</h4>
+    </button>
+  </li>
+</ul>

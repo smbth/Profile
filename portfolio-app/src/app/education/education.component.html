@@ -1,0 +1,38 @@
+<!-- timeline May 2012, May 2014, August 2018 -->
+<!-- CSS timeline -->
+<div class="timeline-container literature-font" [ngClass]="{'dark-theme': darkThemeEnabled}" *ngIf="false">
+    <div class="timeline timeline-vertical timeline-warning">
+        <ul>
+            <li>
+                <div class="description">
+                    <div class="desc_title">ICSE Class 10</div>
+                    <div class="desc_time"> May, 2012 </div>
+                </div>
+            </li>
+            <li>
+                <div class="description">
+                    <div class="desc_title">ISC Class 12</div>
+                    <div class="desc_time"> May, 2014 </div>
+                </div>
+            </li>
+            <li>
+                <div class="description">
+                    <div class="desc_title">B.Tech Computer Science and Engineering, CUSAT</div>
+                    <div class="desc_time"> August, 2018 </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- CSS timeline -->
+
+<!-- primeng timeline -->
+<p-timeline [value]="courseList" pStyleClass="literature-font">
+    <ng-template pTemplate="content" let-course>
+        <small class="p-text-secondary">&#123;&#123;course.time&#125;&#125;</small>
+    </ng-template>
+    <ng-template pTemplate="opposite" let-course>
+        &#123;&#123;course.course_name&#125;&#125;
+    </ng-template>
+</p-timeline>
+<!-- primeng timeline -->

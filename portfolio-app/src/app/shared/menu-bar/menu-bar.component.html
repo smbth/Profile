@@ -1,0 +1,24 @@
+<!-- sidebar -->
+<button class="openbtn literature-font" (click)="toggleSidebar(true)">☰</button>
+<span class="active-text-color display-5 current-route-url pointer">
+  {{currentUrl}}
+</span>
+<!-- TODO: Create a keyboard accessible custom dropdown to select routes -->
+<!-- route selecting dropdown sample implementation - imporve usablility -->
+<!-- <span class="active-text-color display-5 current-route-url pointer" *ngIf="!routeSelector" (click)="showRouteSelector(true)">
+  {{currentUrl}}
+</span>
+<div style="display: inline-block; position: absolute;" *ngIf="routeSelector">
+  <span class="active-text-color display-5 current-route-url pointer" style="display: block;"  routerLink="/about" (click)="showRouteSelector(false)">/about</span>
+  <span class="active-text-color display-5 current-route-url pointer" style="display: block;" routerLink="/technologies" (click)="showRouteSelector(false)">/technologies</span>
+  <span class="active-text-color display-5 current-route-url pointer" style="display: block;" routerLink="/education" (click)="showRouteSelector(false)">/education</span>
+  <span class="active-text-color display-5 current-route-url pointer" style="display: block;" routerLink="/contact" (click)="showRouteSelector(false)">/contact</span>
+</div> -->
+<!-- route selecting dropdown sample implementation --> 
+<div id="mySidepanel" class="sidepanel" #mySidepanel>
+  <div  (click)="toggleSidebar(false)" class="closebtn pointer body-colors">×</div>
+  <div routerLink="/about" routerLinkActive="active" class="pointer" (click)="toggleSidebar(false)"><h4>ABOUT</h4></div>
+  <div routerLink="/technologies" routerLinkActive="active" class="pointer" (click)="toggleSidebar(false)"><h4>TECHNOLOGIES</h4></div>
+  <div routerLink="/education" routerLinkActive="active" class="pointer" (click)="toggleSidebar(false)"><h4>EDUCATION</h4></div>
+  <div routerLink="/contact" routerLinkActive="active" class="pointer" (click)="toggleSidebar(false)"><h4>CONTACT</h4></div>
+</div>

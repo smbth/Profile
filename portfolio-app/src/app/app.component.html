@@ -1,0 +1,26 @@
+<!-- header -->
+<app-header></app-header>
+<!-- header -->
+<!-- content/body -->
+  <!-- <div class="container m-l-0"> -->
+  <div class="container" *ngIf="false">
+    <div class="row">      
+      <!-- menu -->
+      <!-- <div class="col-auto border-end">
+        <app-menu-bar></app-menu-bar>
+      </div>       -->
+      <!-- menu -->
+      <!-- router outlet -->
+      <div class="col">
+        <router-outlet></router-outlet>
+      </div>
+      <!-- router outlet -->
+    </div>
+  </div>
+  <!-- new content body -->
+  <router-outlet></router-outlet>
+  <!-- new content body -->
+<!-- content/body -->
+<!-- footer -->
+  <app-footer></app-footer>
+<!-- footer -->

@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+/* dark mode background color: #21212b text-color: #b08d57 for navigation menu active text-color: white */
+/* dark mode styles goes here */
+/* body {
+    background-color: #21212b !important;
+    color: #b08d57 !important;
+}
+
+.active {
+    color: #ffffff;
+} */
+/* dark mode styles goes here */
+body {
+    --body-text-color: #000000;
+    --body-background-color: #ffffff;
+    --active-text-color: #000000;
+    --active-menu-background-color: aquamarine;
+    --card-shadow: rgba(0,0,0,0.4); 
+}
+
+body.dark-theme {
+    --body-text-color: #b08d57;
+    --body-background-color: #21212b;
+    --active-text-color: #ffffff;
+    --active-menu-background-color: transparent;
+    --card-shadow: rgba(255,255,255,0.4);
+}
+
+body {
+    color: var(--body-text-color) !important;
+    background-color: var(--body-background-color) !important;
+}
+
+.m-l-0 {
+    margin-left: 0 !important;
+}
+
+.p-l-20 {
+    padding-left: 20px;
+}
+
+.literature-font {
+    font-size: large;
+    font-weight: 400;
+    color: var(--active-text-color);
+}
+
+.red {
+    color: #dd0031;
+}
+
+.active {
+    color: var(--active-text-color) !important;
+    background-color: var(--active-menu-background-color) !important;
+}
+
+.pointer {cursor: pointer;}
+
+/* .contact-card {
+    margin: auto;
+    width: fit-content;
+    border: 1px solid var(--active-text-color);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px var(--card-shadow);
+} */
+
+.contact-card {
+    background: var(--body-text-color);
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    width: fit-content;
+}
+
+.body-colors {
+    color: var(--body-text-color);
+}
+
+.xx-large-font {
+    font-size: xx-large;
+}
+
+.active-text-color {
+    color: var(--active-text-color)
+}
+
+/* styles to override primeng theme colors */
+.p-timeline-event-marker, .p-timeline-event-connector {
+    background-color: var(--active-text-color) !important;
+}
+
+.p-timeline, .p-timeline-event-content>.p-text-secondary {
+    color: var(--active-text-color) !important;
+}
+/* styles to override primeng theme colors */
