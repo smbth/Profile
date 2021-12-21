@@ -20,7 +20,8 @@ button {
   box-shadow: 0 4px 8px 0 rgb(15 15 15 / 64%), 0 6px 20px 0 rgb(255 255 255);
 }
 
-.fa-sun::before {
+.fa-sun-o::before {
     position: relative;
     left: -1px;
+    top: -1px;
 }
